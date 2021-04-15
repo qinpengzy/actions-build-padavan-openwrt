@@ -63,8 +63,8 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d" .config       # 删除配置项 网�
 ######################################################################
 
 # 科学
-echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >>.config # SS plus+
-echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >>.config    # SS server
+echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >>.config # SS plus+
+echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=y" >>.config    # SS server
 echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >>.config      # simple-obfs混淆插件,SS 开了才可以打开
 
 #  代理
@@ -89,8 +89,8 @@ echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >>.config
 echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >>.config
 
 # 其他
-echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >>.config  # MENTOHUST
-echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >>.config # SCUTCLIENT
+echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=y" >>.config  # MENTOHUST
+echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=y" >>.config # SCUTCLIENT
 echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >>.config       # 内网穿透FRPC
 echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >>.config       # 内网穿透FRPS
 echo "CONFIG_FIRMWARE_INCLUDE_CADDY=n" >>.config      # 在线文件管理服务
